@@ -32,7 +32,7 @@ $(() => { FissionOpt().then((FissionOpt) => {
     HECm245: [51840, 408],
     LECm247: [11040, 54],
     HECm247: [44160, 324],
-    LEB248: [1080, 52],
+    LEB248: [1080, 52], // Note: All other fuels are 80x that of the NC default in Monifactory, except this one (8x). I believe it's a typo in Monifactory (missing a 0), but I kept the (likely erroneous) value to align with the current version of the modpack.
     HEB248: [43200, 312],
     LECf249: [17280, 116],
     HECf249: [69120, 696],
