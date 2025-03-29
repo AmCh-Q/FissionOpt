@@ -6,12 +6,12 @@ MODULES_DIR=./modules
 # deps
 # xtl and xtensor changed their file structure in the latest release
 # temporary fix: cloned older, pre-change branches for compatibility
-if [[ ! -d $MODULES_DIR\/xtl ]] then
+if [[ ! -d $MODULES_DIR\/xtl ]]; then
     git clone --depth 1 https://github.com/xtensor-stack/xtl.git --branch 0.7.7 $MODULES_DIR\/xtl;
     rm -rf $MODULES_DIR\/xtl/.git;
 fi
 
-if [[ ! -d $MODULES_DIR\/xtensor ]] then
+if [[ ! -d $MODULES_DIR\/xtensor ]]; then
     git clone --depth 1 https://github.com/xtensor-stack/xtensor.git --branch 0.25.0 $MODULES_DIR\/xtensor;
     rm -rf $MODULES_DIR\/xtensor/.git;
 fi
